@@ -134,18 +134,18 @@ nav {
 	background-color: rgba(251, 245, 243, 0.2);
 }
 
-#c-experience {
+#experience {
 	background-image: url("Resources/Images/Experience.png");
 }
 
-#c-education {
+#education {
 	background-image: url("Resources/Images/Education.png");
 }
 
-#c-skills {
+#skills {
 	background-image: url("Resources/Images/Skills.png");
 }
 
-#c-projects {
+#projects {
 	background-image: url("Resources/Images/Projects.png");
 }
