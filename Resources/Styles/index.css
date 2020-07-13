@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Federo&family=Martel:wght@200&display=swap');
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #FBF5F3;
+	height: 100vh;
+}
+
+h1 {
+	font-family: "Federo", serif;
+	color: #1C1C1C;
+}
+
+p {
+	font-family: "Martel", sans-serif;
+	font-weight: 200;
+	color: #1C1C1C; 
+}
+
+.text-pane {
+	height: 100vh;
+	width: 49vw;
+	float: right;
+}
+
+.text-content {
+	height: 100vh;
+	width: 95%;
+	margin: 0 5% 0 0;
+}
+
+.text-content h1, .text-content p, .text-content ul {
+	margin-right: 20%;
+}
+
+.text-content h1 {
+	padding-top: 30%;
+	font-size: 3.75rem;
+	letter-spacing: 0.1em;
+}
+
+.text-content p {
+	padding-top: 4%;
+	font-size: 1.3rem;
+}
+
+.text-content ul {
+	padding-top: 8%;
+	font-family: "Federo";
+	font-size: 1.75rem;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-content li {
+	display: inline;
+}
+
+.text-content a {
+	color: #1C1C1C;
+	text-decoration: none;
+	position: relative;
+	transition: 0.5s;
+}
+
+.text-content a:hover {
+	color: rgba(28, 28, 28, 0.4);
+}
+
+.slider-pane {
+	height: 100vh;
+	width: 49vw;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	display: flex;
+}
+
+nav {
+	z-index: 2;
+	position: absolute;
+	display: inline-flex;
+	left: 20%;
+	bottom: 30%;
+}
+
+.nav-element {
+	height: 1.5em;
+	width: 1.5em;
+	margin: 5px;
+	background-color: rgba(251, 245, 243, 1);
+	border-style: solid;
+	border-color: #FBF5F3;
+	border-radius: 50%;
+	border-width: thin;
+	transition: 0.25s;
+}
+
+.nav-element:hover {
+	background-color: rgba(251, 245, 243, 0);
+}
+
+.card {
+	z-index: 0;
+	min-height: 100vh;
+	min-width: 49vw;
+	float: left;
+	background-size: cover;
+	background-position: right;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.button a {
+	z-index: 2;
+	font-family: "Federo", serif;
+	font-size: 2.5rem;
+	color: #FBF5F3;
+	padding: 5px; 
+	text-decoration: none;
+	border-style: solid;
+	transition: 0.5s;
+}
+
+.button a:hover {
+	background-color: rgba(251, 245, 243, 0.2);
+}
+
+#experience {
+	background-image: url("Resources/Images/Experience.png");
+}
+
+#education {
+	background-image: url("Resources/Images/Education.png");
+}
+
+#skills {
+	background-image: url("Resources/Images/Skills.png");
+}
+
+#projects {
+	background-image: url("Resources/Images/Projects.png");
+}
