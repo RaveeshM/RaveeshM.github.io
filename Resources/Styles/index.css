@@ -135,17 +135,17 @@ nav {
 }
 
 #experience {
-	background-image: url("Resources/Images/Experience.png");
+	background-image: url("/Resources/Images/Experience.png");
 }
 
 #education {
-	background-image: url("Resources/Images/Education.png");
+	background-image: url("/Resources/Images/Education.png");
 }
 
 #skills {
-	background-image: url("Resources/Images/Skills.png");
+	background-image: url("/Resources/Images/Skills.png");
 }
 
 #projects {
-	background-image: url("Resources/Images/Projects.png");
+	background-image: url("/Resources/Images/Projects.png");
 }
