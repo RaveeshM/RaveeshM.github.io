@@ -31,7 +31,7 @@
   scrollbar-width: none;
 }
 
-.card {
+.card-s {
 	width: 70%;
 	height: 30%;
 	padding: 5%;
@@ -44,23 +44,23 @@
 	cursor: pointer;
 }
 
-.card p {
+.card-s p {
 	font-family: "Darker Grotesque", sans-serif;
 }
 
-.card-title {
+.card-s-title {
 	font-size: 1.75rem;
 	font-weight: 600;
 	color: #1C1C1C;
 }
 
-.card-occupation {
+.card-s-occupation {
 	font-size: 1.75rem;
 	font-weight: 500;
 	color: #1C1C1C;
 }
 
-.card-time {
+.card-s-time {
 	font-size: 1.5rem;
 	font-weight: 400;
 	color: #8D775F;
@@ -69,4 +69,18 @@
 .card-expanded-container {
 	width: 65%;
 	height: 100%;
+	padding: 0 10%
+}
+
+.card-l-main {
+	width: 100%;
+	height: 50%;
+	padding: 5%;
+	margin: 0;
+	background-color: rgba(141, 119, 95, 0.25);
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #8D775F;
+	border-width: medium;
+	cursor: pointer;
 }
