@@ -82,7 +82,7 @@ nav {
 	background-color: rgba(251, 245, 243, 0);
 }
 
-.card {
+.slide {
 	z-index: 0;
 	min-height: 100vh;
 	min-width: 49vw;
