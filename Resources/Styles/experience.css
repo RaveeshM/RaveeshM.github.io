@@ -1,0 +1,48 @@
+.content-container {
+	padding: 2% 5%;
+	width: 100vw;
+	height: 90vh;
+	display: flex;
+}
+
+.card-stream-container {
+	width: 35%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	border-right: solid;
+	border-color: #1C1C1C;
+	border-width: medium;
+}
+
+.card-stream {
+	width: 90%;
+	min-height: 100%;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+
+.card-stream::-webkit-scrollbar {
+	display: none;
+}
+
+.card-stream {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.card {
+	width: 70%;
+	height: 30%;
+	margin: 0 auto 20px;
+	background-color: rgba(141, 119, 95, 0.25);
+	border-style: solid;
+	border-radius: 15px;
+	border-color: #8D775F;
+	border-width: medium;
+}
+
+.card-expanded-container {
+	width: 65%;
+	height: 100%;
+}
