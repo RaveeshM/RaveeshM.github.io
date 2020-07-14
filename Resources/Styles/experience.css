@@ -34,12 +34,36 @@
 .card {
 	width: 70%;
 	height: 30%;
+	padding: 5%;
 	margin: 0 auto 20px;
 	background-color: rgba(141, 119, 95, 0.25);
 	border-style: solid;
 	border-radius: 15px;
 	border-color: #8D775F;
 	border-width: medium;
+	cursor: pointer;
+}
+
+.card p {
+	font-family: "Darker Grotesque", sans-serif;
+}
+
+.card-title {
+	font-size: 1.75rem;
+	font-weight: 600;
+	color: #1C1C1C;
+}
+
+.card-occupation {
+	font-size: 1.75rem;
+	font-weight: 500;
+	color: #1C1C1C;
+}
+
+.card-time {
+	font-size: 1.5rem;
+	font-weight: 400;
+	color: #8D775F;
 }
 
 .card-expanded-container {
