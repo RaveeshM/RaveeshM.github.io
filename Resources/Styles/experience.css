@@ -1,3 +1,7 @@
+p {
+	font-family: "Darker Grotesque", sans-serif;
+}
+
 .content-container {
 	padding: 2% 5%;
 	width: 100vw;
@@ -44,10 +48,6 @@
 	cursor: pointer;
 }
 
-.card-s p {
-	font-family: "Darker Grotesque", sans-serif;
-}
-
 .card-s-title {
 	font-size: 1.75rem;
 	font-weight: 600;
@@ -66,13 +66,22 @@
 	color: #8D775F;
 }
 
+.card-s-posttext {
+	color: #1C1C1C;
+	font-size: 1.25rem;
+	text-align: justify;
+	display: none;
+	width: 70%;
+	margin: 0 auto 20px;
+}
+
 .card-expanded-container {
 	width: 65%;
 	height: 100%;
 	padding: 0 10%
 }
 
-.card-l-main {
+.card-l {
 	width: 100%;
 	height: 50%;
 	padding: 5%;
@@ -82,5 +91,10 @@
 	border-radius: 15px;
 	border-color: #8D775F;
 	border-width: medium;
-	cursor: pointer;
+}
+
+.card-l-title {
+	font-size: 2.5rem;
+	font-weight: 600;
+	color: #1C1C1C;
 }
