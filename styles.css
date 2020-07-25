@@ -1,0 +1,436 @@
+/*UNIVERSAL*/
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+:root {
+	--main: #5E6572;
+	--accent: #EEF1EF;
+	--transparent: rgba(0, 0, 0, 0);
+	--transparent-accent: rgba(238, 241, 239, 0.2);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-family: "Darker Grotesque", sans-serif;
+	font-weight: 300;
+	color: var(--accent); 
+}
+
+body {
+	min-height: 100vh;
+	position: relative;
+
+	background-color: var(--main);
+	background-image: url("Resources/Images/background-logo.svg");
+	background-position: 100% 90%;
+	background-repeat: no-repeat;
+}
+
+strong {
+	font-weight: 600;
+}
+
+.border {
+	border-style: solid;
+	border-color: var(--accent);
+	border-width: medium;
+}
+
+.scroll::-webkit-scrollbar-track {
+	background-color: var(--main);
+}
+
+.scroll::-webkit-scrollbar {
+	width: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+	background-color: var(--accent);
+}
+
+.hover-pointer:hover {
+	background-color: var(--transparent-accent);
+	cursor: pointer;
+}
+
+.pointer:hover {
+	cursor: pointer;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ellipsis {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis; 
+}
+
+/*DIALOGUE BOXES*/
+
+.db-frame {
+	width: 40vw;
+	height: 50vh;
+
+	z-index: 4;
+	position: absolute;
+
+	background-color: var(--main);
+}
+
+.db-header {
+	width: 98%;
+	height: 8%;
+	margin: 0 1%;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.db-name {
+	font-size: 1.25rem;
+}
+
+.db-icon-list {
+	height: 90%;
+
+	display: inline-flex;
+}
+
+.db-icon-container {
+	width: 25px;
+	height: 25px;
+	margin-left: 5px;
+}
+
+.db-icon-1 {
+	background-image: url("Resources/Images/dialogue-minimize.svg");
+	background-size: cover;
+}
+
+.db-icon-2 {
+	background-image: url("Resources/Images/dialogue-close.svg");
+	background-size: cover;	
+}
+
+.db-content {
+	width: 98%;
+	height: 90%;
+	padding: 5%; 
+	margin: 0 1%;
+
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+.db-content-p {
+	padding-top: 20px;
+
+	font-size: 1.5rem;
+}
+
+.terminal-content {
+	width: 98%;
+	height: 90%;
+	padding: 1%; 
+	margin: 0 1%;
+
+	overflow-y: hidden;	
+}
+
+.terminal-content > p, td {
+	font-family: 'Ubuntu Mono', monospace !important;
+}
+
+.terminal-content td {
+	padding-right: 2em;
+}
+
+#introduction {
+	top: 25vh;
+	left: 30vw;
+	visibility: hidden;
+}
+
+#experience {
+	top: 26vh;
+	left: 29vw;
+	visibility: hidden;
+}
+
+#education {
+	top: 27vh;
+	left: 28vw;
+	visibility: hidden;
+}
+
+#skills {
+	top: 28vh;
+	left: 27vw;
+	visibility: hidden;
+}
+
+#projects {
+	top: 29vh;
+	left: 26vw;
+	visibility: hidden;
+}
+
+#terminal {
+	top: 30vh;
+	left: 25vw;
+	visibility: hidden;
+}
+
+/*DESKTOP*/
+#dsk {
+	width: 100vw;
+	height: 100vh;
+	
+	z-index: 0;
+}
+
+.dsk-icon-grid {
+	width: 100px;
+	height: auto;
+	margin-top: 1rem;
+
+	display: inline-grid;
+
+	grid-row-gap:10px; 
+}
+
+.dsk-icon-container {
+	width: 80px;
+	height: 80px;
+
+	background-size: cover;
+}
+
+#dsk-icon-experience {
+	background-image: url("Resources/Images/desktop-experience.svg")
+}
+#dsk-icon-education {
+	background-image: url("Resources/Images/desktop-education.svg")
+}
+#dsk-icon-skills {
+	background-image: url("Resources/Images/desktop-skills.svg")
+}
+#dsk-icon-projects {
+	background-image: url("Resources/Images/desktop-projects.svg")
+}
+
+/*START MENU*/
+#start {
+	visibility: hidden;
+}
+
+.sm {
+	width: 20vw;
+	min-width: 205px;
+	height: 60vh;
+
+	position: absolute;
+	bottom: 2.2rem;
+	display: flex;
+
+	border-bottom: none;
+	background-color: var(--main);
+}
+
+.sm-logo {
+	padding-top: 5px;
+	transform: rotate(180deg);
+
+	border-right: none; 
+	border-top: none;
+	border-bottom: none;
+}
+
+.sm-logo p {
+	font-size: 2rem;
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	writing-mode: vertical-rl;
+}
+
+.sm-list {
+	width: 100%;
+	height: 100%;
+}
+
+.sm-list-element {
+	width: 100%;
+	height: 13%;
+	margin: 2% 0;
+
+	display: flex;
+	align-items: center;
+}
+
+.sm-list-element-img {
+	width: 20%;
+	height: 100%;
+	margin: 0 0 0 5%;
+
+	background-size: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+#sm-icon-1 {
+	background-image: url("Resources/Images/start-menu-mail.svg");
+}
+
+#sm-icon-2 {
+	background-image: url("Resources/Images/start-menu-resume.svg");
+}
+
+#sm-icon-3 {
+	background-image: url("Resources/Images/start-menu-github.svg");
+}
+
+#sm-icon-4 {
+	background-image: url("Resources/Images/start-menu-introduction.svg");
+}
+
+#sm-icon-5 {
+	background-image: url("Resources/Images/start-menu-terminal.svg");
+}
+
+#sm-icon-6 {
+	background-image: url("Resources/Images/start-menu-logoff.svg");
+}
+
+#sm-icon-7 {
+	background-image: url("Resources/Images/start-menu-shutdown.svg");
+}
+
+.sm-list-element-title {
+	width: 100%;
+	height: 2rem;
+	margin: 0 0 0 5%;
+}
+
+.sm-list-element-title p {
+	font-weight: 500;
+	font-size: 1.5rem;
+}
+
+/*TASKBAR*/
+.tb {
+	height: 2.2rem;
+	width: 100vw;
+	padding: 2px;
+	
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--main);
+
+	font-size: 1.25rem;
+	line-height: 95%;
+}
+
+.tb-content-container {
+	display: inline-flex;
+}
+
+#start-button {
+	height: auto;
+	padding: 0 2px;
+}
+
+.tb-icon-list {
+	width: 110px;
+	padding: auto 5px;
+	margin: auto 10px;
+
+	display: inline-flex;
+	justify-content: space-around;
+
+	border-top: none;
+	border-bottom: none;
+}
+
+.tb-icon-container {
+	width: 30px;
+	height: 25px;
+
+	background-size: cover;
+}
+
+#tb-icon-1 {
+	background-image: url("Resources/Images/taskbar-mail.svg");
+}
+
+#tb-icon-2 {
+	background-image: url("Resources/Images/taskbar-resume.svg"); 
+}
+
+#tb-icon-3 {
+	background-image: url("Resources/Images/taskbar-github.svg"); 
+}
+
+.tb-minimize {
+	display: inline-flex;
+}
+
+.tb-minimize-element {
+	width: 5rem;
+	padding: 0 2px;
+	margin: 0 2px;
+
+	font-size: 1rem;
+	display: none;
+
+	background-color: var(--transparent);
+}
+
+.tb-minimize-element p {
+	overflow: hidden;
+}
+
+#time {
+	width: 4em;
+
+	text-align: center;
+}
+
+/*MOBILE*/
+@media screen and (max-width: 450px) {
+  
+  body {
+    background-size: contain;
+  }
+
+  .sm {
+  	width: 40vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+	.tb {
+		overflow: scroll;
+		overflow-x: scroll;
+		overflow-y: hidden;
+	}
+
+	.db-frame {
+  		width: 70vw;
+  	}
+}
