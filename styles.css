@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
 :root {
 	--main: #0A0A0A;
 	--text: #FFFFFF;
 	--accent: #E5625E;
-	--transparent: rgba(107, 129, 140, 0.3);
+	--accent2: #FFB627;
+	--transparent: rgba(255, 255, 255, 0.15);
+	--transparent2: rgba(229, 98, 94, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--transparent); 
 }
 
 * {
@@ -20,21 +30,34 @@ body {
 
 	background-color: var(--main);
 	border-style: solid none none none;
-	border-width: thick;
+	border-width: 0.5em;
 	border-color: var(--accent);
 }
 
-h1, p {
+h1, h2, h3, p, ul {
 	font-family: "Darker Grotesque", sans-serif;
 	font-weight: 300;
 	color: var(--text);
 }
 
 h1 {
-	font-size: 3.5rem;
+	font-size: 4rem;
 	padding: 0;
 	margin: 0;
 }
+
+h2 {
+	font-size: 2rem;
+	padding: 0;
+	margin: 0;	
+}
+
+h3 {
+	font-size: 1.25rem;
+	padding: 0;
+	margin: 0;
+}
+
 
 .text-accent {
 	color: var(--accent);
@@ -43,16 +66,113 @@ h1 {
 .text-pane {
 	width: 50%;
 	height: auto;
-	padding: 15vh 5% 0 5%;
+	padding: 10% 7% 0 5%;
 }
 
 .text-pane p {
 	font-size: 2rem;
 }
 
-.scroll-content {
-	background-color: green;
+.text-pane ul {
+	width: 100%;
+	padding: 0;
+
+	list-style-type: none;
+	display: inline-flex;
+	justify-content: space-between;
+
+	font-size: 1.75rem;
+}
+
+.text-pane ul :hover {
+	cursor: pointer;
+	color: var(--accent);
+}
+
+.scroll-pane {
 	width: 50%;
+	margin: 12% auto 0;
 	overflow: hidden;
 	overflow-y: scroll;
+}
+
+.scroll-grid {
+	width: 475px;
+	margin-top: 20px; 
+
+	display: grid;
+	grid-template-columns: 150px 150px 150px;
+	grid-column-gap: 10px; 
+	grid-row-gap: 10px;
+
+	justify-content: space-between;
+	justify-items: center;
+}
+
+.scroll-grid-item {
+	width: 150px;
+	height: 150px;
+	padding: 2%;
+
+	position: relative;
+
+	background-color: var(--transparent);
+	transition-duration: 0.25s;
+	transition-timing-function: ease-in-out;
+}
+
+.scroll-grid-item:hover {
+	background-color: var(--transparent2);
+}
+
+.scroll-grid-item-title {
+	width: 100%;
+	height: 50%;
+}
+
+.scroll-grid-item-subtitle {
+	width: 100%;
+	height: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+	
+	body {
+		display: block;
+	}
+
+	.text-pane {
+		width: 100vw;
+	}
+
+	.scroll-pane {
+		width: 100vw;
+	}
+
+	.scroll-grid {
+		width: 100vw;
+
+		grid-template-columns: 45vw 45vw;
+		grid-column-gap: 10px;
+
+		justify-content: space-around;
+	}
+
+	.scroll-grid-item {
+		width: 100%;
+		height: 100%;
+		padding: 2%;
+
+		position: relative;
+	}
+
+	.scroll-grid-item-title {
+		width: 100%;
+		height: 40%;
+	}
+	
+	.scroll-grid-item-subtitle {
+		width: 100%;
+		height: 60%;
+	}
 }
