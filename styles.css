@@ -137,6 +137,10 @@ h3 {
 
 @media only screen and (max-width: 1200px) {
 	
+	:root {
+		--transparent: rgba(229, 98, 94, 0.5);
+	}
+
 	body {
 		display: block;
 	}
@@ -147,6 +151,9 @@ h3 {
 
 	.scroll-pane {
 		width: 100vw;
+		height: auto;
+
+		overflow: visible;
 	}
 
 	.scroll-grid {
