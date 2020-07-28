@@ -204,6 +204,7 @@ h3 {
 .modal-content h3 {
 	margin-bottom: 2%; 
 }
+
 .modal-content p {
 	margin: 0;
 	font-size: 1.25rem;
@@ -218,6 +219,10 @@ h3 {
 
 	body {
 		display: block;
+	}
+
+	h2 {
+		padding-left: 2.5vw;
 	}
 
 	.text-pane {
@@ -264,5 +269,19 @@ h3 {
 
 		top: 22.5vh;
 		left: 15vw;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+
+	.modal-header h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+
+	.modal-header h2 {
+		font-size: 1.25rem;
 	}
 }
