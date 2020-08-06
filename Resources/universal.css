@@ -1,0 +1,30 @@
+/*CONTAINS CODE FOR UNIVERSAL PROPERTIES (i.e. COLOR, SCROLLBARS, BOX-SIZING)*/
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');*/
+
+:root {
+	--main: #0A0A0A;
+	--text: #FFFFFF;
+	--accent: #E5625E;
+	--modal: #2F2F2F;
+	--transparent: rgba(255, 255, 255, 0.15);
+	--transparent-accent: rgba(229, 98, 94, 0.5);
+	--transparent-black: rgba(0, 0, 0, 0.75);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: var(--transparent); 
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--main);
+	padding: 0;
+	margin: 0;
+}
