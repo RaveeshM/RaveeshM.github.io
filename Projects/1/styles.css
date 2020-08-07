@@ -1,0 +1,70 @@
+body {
+	height: 100vh;
+
+	color: var(--accent);
+	font-size: 1.5rem;
+}
+
+body p {
+	padding: 0;
+	margin: auto 0;
+	vertical-align: middle;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.player-tracker {
+	width: 400px;
+	height: 50px;
+	margin: 0 0 20px 0;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+#active-player {
+	text-decoration: underline;
+}
+
+.board {
+	width: 400px;
+	height: 400px;
+	padding: 10px;
+
+	background-color: var(--accent);
+
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+	
+}
+
+.cell {
+	background-color: var(--transparent);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.cell:hover {
+	background-image: url("../../Resources/Graphics/x.svg");
+	filter: opacity(20%);
+}
+
+.x {
+	background-image: url("../../Resources/Graphics/x.svg");
+
+}
+
+.o {
+	background-image: url("../../Resources/Graphics/o.svg");
+}
