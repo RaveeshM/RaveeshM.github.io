@@ -1,5 +1,5 @@
 /*CONTAINS CODE FOR UNIVERSAL PROPERTIES (i.e. COLOR, SCROLLBARS, BOX-SIZING)*/
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap');
 
 :root {
 	--main: #0A0A0A;
@@ -25,6 +25,14 @@
 
 body {
 	background-color: var(--main);
+	
 	padding: 0;
 	margin: 0;
 }
+
+h1, h2, h3, p, a, ul {
+	font-family: "Darker Grotesque", sans-serif;
+	font-weight: 300;
+}
+
+/* PROJECTS */
