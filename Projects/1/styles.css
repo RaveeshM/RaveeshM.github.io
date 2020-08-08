@@ -1,3 +1,7 @@
+:root {
+	--marker: url("../../Resources/Graphics/x.svg");
+}
+
 body {
 	height: 100vh;
 
@@ -24,14 +28,20 @@ body p {
 .player-tracker {
 	width: 400px;
 	height: 50px;
-	margin: 0 0 20px 0;
+	margin: 0 0 10px 0;
 
 	display: flex;
 	justify-content: space-between;
 }
 
-#active-player {
-	text-decoration: underline;
+#win-tracker {
+	height: 2rem;
+	width: 100%;
+	margin: 0 0 10px 0;
+}
+
+#win-tracker p {
+	float: top;
 }
 
 .board {
@@ -56,7 +66,7 @@ body p {
 }
 
 .cell:hover {
-	background-image: url("../../Resources/Graphics/x.svg");
+	background-image: var(--marker);
 	filter: opacity(20%);
 }
 
@@ -67,4 +77,30 @@ body p {
 
 .o {
 	background-image: url("../../Resources/Graphics/o.svg");
+}
+
+.reset {
+	margin: 20px 0 0 0;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 520px) {
+
+	body {
+		width: 100vw;
+		min-height: 100vh;
+	}
+
+	.player-tracker {
+		width: 100%;
+	}
+
+	.player-tracker p {
+		margin: 0 20px;
+	}
+
+	.board {
+		width: 300px;
+		height: 300px;
+	}
 }

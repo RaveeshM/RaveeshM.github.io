@@ -14,19 +14,23 @@
 <body>
 	<div class="container">
 		<div class="player-tracker">
-			<p><span id="active-player">Player</span> (X)</p>
-			<p><span>Computer</span> (O)</p>
+			<p><span id="active-player-1">Player 1</span> (X)</p>
+			<p><span id="active-player-2">Player 2</span> (O)</p>
 		</div>
+		<div><p id="win-tracker"></p></div>
 		<div class="board">
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
-			<div class="cell"></div>
+			<div class="cell" id="0" onclick="runGame(this.id)"></div>
+			<div class="cell" id="1" onclick="runGame(this.id)"></div>
+			<div class="cell" id="2" onclick="runGame(this.id)"></div>
+			<div class="cell" id="3" onclick="runGame(this.id)"></div>
+			<div class="cell" id="4" onclick="runGame(this.id)"></div>
+			<div class="cell" id="5" onclick="runGame(this.id)"></div>
+			<div class="cell" id="6" onclick="runGame(this.id)"></div>
+			<div class="cell" id="7" onclick="runGame(this.id)"></div>
+			<div class="cell" id="8" onclick="runGame(this.id)"></div>
+		</div>
+		<div class="reset">
+			<p onclick="resetGame()">RESET GAME</p>
 		</div>
 	</div>
 </body>
