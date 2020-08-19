@@ -1,187 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Raveesh Mehta</title>
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<link rel="stylesheet" type="text/css" href="Resources/universal.css">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="Resources/Favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="Resources/Favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="Resources/Favicon/favicon-16x16.png">
-	<link rel="manifest" href="Resources/Favicon/site.webmanifest">
-	<script src="scripts.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raveesh Mehta</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<!--  _  _ ___ _    _    ___  _  -->
-	<!-- | || | __| |  | |  / _ \| | -->
- 	<!-- | __ | _|| |__| |_| (_) |_| -->
-	<!-- |_||_|___|____|____\___/(_) -->
-	<!-- If you're reading my code and have any suggestions, feel free to email me! -->
-	<div class="text-pane">
-		<h1>RAVEESH MEHTA</h1>
-			<p>I’m a student at Northeastern University studying <span class="text-accent">Computer Science and Economics</span>.</p>
-			<p>I’m interested in <span class="text-accent">international affairs</span> and <span class="text-accent">development economics</span>, and their intersection with computer science.</p>
-			<ul>
-				<li onclick="window.location.href='https://drive.google.com/file/d/1aHcOcsbi5ybbqV3s5NcIUOC80C9g6kuL/view?usp=sharing';">RESUME</li>
-				<li onclick="window.location.href='https://github.com/RaveeshM/RaveeshM.github.io';">GITHUB</li>
-				<li onclick="window.location.href='https://drive.google.com/file/d/1aHcOcsbi5ybbqV3s5NcIUOC80C9g6kuL/view?usp=sharing';">MAIL</li>
-			</ul> 
-	</div>
-	<div class="scroll-pane">
-		<h2>Experience</h2>
-		<div class="scroll-grid">
-			<div class="scroll-grid-item cursor" id="experience-knowt" onclick="showModal(this.id)">
-				<div class="scroll-grid-item-title">
-					<h3>KNOWT: HEAD OF MARKETING</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>June 2019 - Present</p>
-				</div>
-			</div>
-			<div class="scroll-grid-item cursor" id="experience-geekleague" onclick="showModal(this.id)">
-				<div class="scroll-grid-item-title">
-					<h3>GEEK LEAGUE: PRESIDENT</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>June 2019 - June 2020</p>
-				</div>
-			</div>
-			<div class="scroll-grid-item">
-				<div class="scroll-grid-item-title cursor" id="experience-mun" onclick="showModal(this.id)">
-					<h3>MODEL UNITED NATIONS: DELEGATE</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-title">
-					<p>Jan. 2018 - June 2020</p>
-				</div>
-			</div>			
-		</div>
-		<h2>Education</h2>
-		<div class="scroll-grid">
-			<div class="scroll-grid-item">
-				<div class="scroll-grid-item-title cursor" id="education-neu" onclick="showModal(this.id)">
-					<h3>NORTHEASTERN UNIVERSITY</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>Incoming Freshman ('24)</p>
-				</div>
-			</div>
-			<div class="scroll-grid-item">
-				<div class="scroll-grid-item-title cursor" id="education-ebhs" onclick="showModal(this.id)">
-					<h3>EAST BRUNSWICK HIGH SCHOOL</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>GPA: 3.8/4</p>
-				</div>
-			</div>		
-		</div>
-		<h2>Skills</h2>
-		<div class="scroll-grid">
-			<div class="scroll-grid-item">
-				<div class="scroll-grid-item-title">
-					<h3>PROGRAMMING</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>HTML, CSS, JS, Java</p>
-				</div>
-			</div>
-			<div class="scroll-grid-item">
-				<div class="scroll-grid-item-title">
-					<h3>SOFTWARE</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>MS Office, GSuite, Photoshop, Figma</p>
-				</div>
-			</div>	
-			<div class="scroll-grid-item">
-				<div class="scroll-grid-item-title">
-					<h3>LANGUAGES</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>Spanish, Hindi, Gujarati</p>
-				</div>
-			</div>		
-		</div>
-		<h2>Projects</h2>
-		<div class="scroll-grid">
-			<div class="scroll-grid-item cursor" onclick="window.location.href='/Projects/1/tic-tac-toe.html';">
-				<div class="scroll-grid-item-title">
-					<h3>#1: TIC TAC TOE</h3>
-				</div>
-				<br>
-				<div class="scroll-grid-item-subtitle">
-					<p>Made with JS</p>
-				</div>
-			</div>		
-		</div>
-	</div>
-	<div id="modal-background"></div>
-	<div class="modal-box modal-experience-knowt">
-		<div class="modal-header modal-experience-knowt">
-			<h2>Knowt</h2>
-			<div class="modal-close-icon modal-experience-knowt" id="close-experience-knowt" onclick="closeModal(this.id)"></div>
-		</div>
-		<div class="modal-content modal-experience-knowt">
-			<h3>June 2019 - Present</h3>
-			<p><a href="https://knowt.io/">Knowt.io</a> is an educational technology startup whose app takes students' notes and instantly makes quizzes from them using AI and ML. At Knowt, I served as the Head of Marketing, where I helped plan, initiate, and execute new marketing campaigns and implement SEO, Google Ads and other marketing tools.</p>
-			<br>
-			<p>Skills: Google, Instagram and Facebook Ads; Email automation and marketing. SEO techniques (including keywords, backlinks, and Google Search Console).  </p>
-		</div>
-	</div>
-	<div class="modal-box modal-experience-geekleague">
-		<div class="modal-header modal-experience-geekleague">
-			<h2>Geek League</h2>
-			<div class="modal-close-icon modal-experience-geekleague" id="close-experience-geekleague" onclick="closeModal(this.id)"></div>
-		</div>
-		<div class="modal-content modal-experience-geekleague">
-			<h3>June 2019 - June 2020</h3>
-			<p>Geek League is a volunteer organization which has teens teach elderly library patrons how to use different technologies and assist them with any questions they have. I was a member beginning 2016 and served on the executive board from 2017-2019, after which I became President. In addition to directly helping patrons, at Geek League I helped write lesson plans for classes in Microsoft Word and Computer Security, admitted new volunteers into the program, and ensured the smooth functioning of the organization.</p>
-			<br>
-			<p>Skills: Leadership, patience, commitment.  </p>
-		</div>
-	</div>
-	<div class="modal-box modal-experience-mun">
-		<div class="modal-header modal-experience-mun">
-			<h2>Model United Nations</h2>
-			<div class="modal-close-icon modal-experience-mun" id="close-experience-mun" onclick="closeModal(this.id)"></div>
-		</div>
-		<div class="modal-content modal-experience-mun">
-			<h3>Jan. 2018 - June 2020</h3>
-			<p>I served as a delegate in the East Brunswick Model United Nations team. This involved thorough research of complex issues such as the efficacy of the international healthcare response, humanitarian crisis in Yemen, regulation of cryptocurrency, and validity of existing treaties in outer space. I was routinely required to prepare 5-10 page summaries of the history, blocs, and solutions to these issues. This research culimated with debate of these issues at national and international conferences.</p>
-			<br>
-			<p>Skills: Government, Policy, International Affairs; Research, Public Speaking, Debate.</p>
-		</div>
-	</div>
-	<div class="modal-box modal-education-neu">
-		<div class="modal-header modal-education-neu">
-			<h2>Northeastern University</h2>
-			<div class="modal-close-icon modal-education-neu" id="close-education-neu" onclick="closeModal(this.id)"></div>
-		</div>
-		<div class="modal-content modal-education-neu">
-			<h3>September 2020 - Present (Expected: June 2024)</h3>
-			<p>GPA: N/A</p>
-			<p>Major: Computer Science and Economics</p>
-			<p>Relevant Coursework: Fundamentals of Computer Science, Discrete Structures.</p>
-			<br>
-			<p>Recipient of the Northeastern Dean's Scholarship</p>
-		</div>
-	</div>
-	<div class="modal-box modal-education-ebhs">
-		<div class="modal-header modal-education-ebhs">
-			<h2>East Brunswick High School</h2>
-			<div class="modal-close-icon modal-education-ebhs" id="close-education-ebhs" onclick="closeModal(this.id)"></div>
-		</div>
-		<div class="modal-content modal-education-ebhs">
-			<h3>September 2017 - June 2020</h3>
-			<p>GPA: 3.8/4</p>
-			<p>Relevant Coursework: AP Macroeconomics, AP Microeconomics (self-study), AP Computer Science A, Calculus III H, Web Publishing I, AP English Literature, AP Physics C, International Studies Honors.</p>
-		</div>
-	</div>
+    <!-- PAGE 1 -->
+    <div class="page">
+        <div class="spacer"></div>
+        <div class="flex-container">
+            <div id="navigation" class="text-secondary">
+                <ul>
+                    <li><a href="#about" class="invisible-link">ABOUT ME</a></li>
+                    <li><a href="#projects" class="invisible-link">PROJECTS</a></li>
+                    <li><a href="#contact" class="invisible-link">CONTACT</a></li>
+                </ul>
+            </div>
+            <div id="title">
+                <p class="text-primary">RAVEESH MEHTA</p>
+            </div>
+            <div id="text-flex-container">
+                <p id="intro-text-content-L" class="text-secondary">I’M A STUDENT AT NORTHEASTERN UNIVERSITY STUDYING COMPUTER SCIENCE AND ECONOMICS.</p>
+                <p id="intro-text-content-R"class="text-secondary">I’M INTERESTED IN HOW COMPUTER SCIENCE INSIGHTS CAN HELP ADVISE ECONOMIC AND LEGISLATIVE POLICY.</p>
+            </div>
+        </div>
+        <div class="spacer"></div>
+    </div>
+    <!-- PAGE 2 -->
+    <div id="about" class="page">
+        <div class="spacer"></div>
+        <div class="section-title">
+            <p class="text-primary">001.</p>
+            <p class="text-primary">ABOUT ME</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="text-container-two-col">
+            <p class="text-secondary"><span class="underline">EDUCATION</span>: I'M AN INCOMING FRESHMAN AT NORTHEASTERN UNIVERSITY STUDYING COMPUTER SCIENCE AND ECONOMICS
+            (2020-2024). BEFORE THAT, I GRADUATED FROM EAST BRUNSWICK HIGH SCHOOL.</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div class="section-title">
+            <p class="text-primary">002.</p>
+            <p class="text-primary">EXPERIENCE</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="text-container-two-col">
+            <p class="text-secondary"><span class="underline">EXPERIENCE</span>: I'M THE HEAD OF MARKETING FOR AN EDTECH STARTUP CALLED <a href="https://knowt.io/" class="no-color">KNOWT</a>(↗).
+            KNOWT'S APP USES AI AND ML TO MAKE REVIEW QUIZZES FROM STUDENTS' NOTES. I USE SEO AND OTHER DIGITAL MARKETING TECHNIQUES TO INCREASE THE USERBASE OF THE APP.</p>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+    <!-- PAGE 4 -->
+    <div id="projects" class="page">
+        <div class="section-title">
+            <p class="text-primary">003.</p>
+            <p class="text-primary">PROJECTS</p>
+        </div>
+        <div class="spacer"></div>
+        <div id="project-list" class="text-container-two-col">
+            <ul class="text-secondary">
+                <li>#1 PROJECT (↗)</li>
+                <li>#2 PROJECT (↗)</li>
+                <li>#3 PROJECT (↗)</li>
+                <li>#4 PROJECT (↗)</li>
+                <li>#5 PROJECT (↗)</li>
+            </ul>
+        </div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+    </div>
+    <!-- FOOTER -->
+    <div id="contact" class="footer text-secondary">
+        <ul>
+            <li><a href="https://drive.google.com/file/d/1aHcOcsbi5ybbqV3s5NcIUOC80C9g6kuL/view" class="invisible-link">RESUME</a></li>
+            <li><a href="https://www.linkedin.com/in/raveeshmehta/" class="invisible-link">LINKEDIN</a></li>
+            <li><a href="https://github.com/RaveeshM" class="invisible-link">GITHUB</a></li>
+            <li><a href="mailto:raveeshnmehta@gmail.com" class="invisible-link">MAIL</a></li>
+        </ul>
+        <p>CREATED BY RAVEESH MEHTA</p>
+    </div>
 </body>
+</html>
