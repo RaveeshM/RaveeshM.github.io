@@ -3,6 +3,10 @@
 :root {
     --col: calc(100vw / 5);
     --row: calc(100vh / 7);
+
+    --color-bg: #FFFFFF;
+    --color-fg: #000000;
+    --color-md: #757780;
 }
 
 /* CUSTOM SCROLLBAR */
@@ -15,22 +19,43 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #000000;
+    background: var(--color-fg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #757780; 
+    background: var(--color-md);
 }
 
 /* CUSTOM SELECTION COLOR */
 p::selection, a::selection, li::selection, span::selection {
-    color: #757780;
+    color: var(--color-md);
+}
+
+/* DARK MODE */
+#darkmode-floater {
+    width: 35px;
+    height: 35px;
+
+    right: calc(var(--col) / 5);
+    bottom: calc(var(--row) / 2);
+
+    position: fixed;
+    z-index: 1;
+
+    background-image: url(assets/sunset.svg);
+}
+
+#darkmode-floater:hover {
+    cursor: pointer;
 }
 
 /* UNIVERSAL */
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
+
+    color: var(--color-fg);
+    background-color: var(--color-bg);
 }
 
 body {
@@ -59,12 +84,12 @@ a {
 }
 
 .invisible-link {
-    color: black;
+    color: var(--color-fg);
     text-decoration: none;
 }
 
 .no-color {
-    color: black;
+    color: var(--color-fg);
 }
 
 .underline {
