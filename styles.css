@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100&display=swap');
+
+/* Universal Styling */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+:root {
+    --color-fg: #FFFFFF;
+    --color-bg: #000000;
+
+    --row: calc(100vh / 12);
+    --column: calc(100vw / 20);
+}
+
+/* Element-wise Styling */
+body {
+    background-color: var(--color-bg);
+}
+
+nav {
+    width: var(--column);
+    height: calc(10 * var(--row));
+
+    z-index: 1;
+    position: absolute;
+    top: var(--row);
+    right: var(--column);
+}
+
+h1, p, a, li {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+
+    color: var(--color-fg);
+}
+
+h1 {
+    font-size: 2.5em;
+    letter-spacing: normal;
+}
+
+/* Utility Classes */
+.flex-center {
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Class-wise Styling */
+.page {
+    width: 100vw;
+    height: 100vh;
+
+    padding: var(--row) var(--column);
+    
+    position: relative;
+    z-index: 0;
+}
+
+.links {
+    width: auto;
+    height: fit-content;
+
+    padding: 1em 0 0 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.links > li {
+    list-style: none;
+}
+
+/* Particles.js Styling */
+#particles-js {
+    width: 100vw;
+    height: 100vh;
+
+
+    position: fixed;
+    z-index: -1;
+}
+
+/* Navigation Styling */
+.nav-links {
+    width: 100%;
+    height: calc(4 * var(--row));
+}
+
+.nav-links > a {
+    width: var(--row);
+    height: var(--row);
+
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.nav-line {
+    width: 0.5px;
+    height: 80%;
+
+    margin: 15% 0% 0%;
+
+    background-color: var(--color-fg);
+}
+
+/* IDs */
+#github {
+    background-image: url("/assets/images/icon-github.svg");
+}
+
+#linkedin {
+    background-image: url("/assets/images/icon-linkedin.svg");
+}
+
+#email {
+    background-image: url("/assets/images/icon-email.svg");
+}
+
+#resume {
+    background-image: url("/assets/images/icon-resume.svg");
+}
